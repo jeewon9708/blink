@@ -12,16 +12,18 @@ Blink::Blink(int pin)
 
 void Blink::on(int delaytime)
 {
-	delay(delaytime);
+	
 	digitalWrite(_pin,HIGH);
 	Serial.println("high");
+	delay(delaytime);
 	
 }
 void Blink::off(int delaytime)
 {	
-    delay(delaytime);
+    
 	digitalWrite(_pin,LOW);
 	Serial.println("low");
+	delay(delaytime);
 	
 }
 
